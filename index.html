@@ -106,6 +106,58 @@
   transform: scale(1.1);
 }
 
+/* Add this to your style section or main CSS file */
+#certification-section .card-img-top {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: contain;
+}
+@media (max-width: 767px) {
+  #certification-section .card-img-top {
+    max-height: 120px;
+  }
+}
+
+#certification-section .block-20 {
+  height: 250px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  width: 100%;
+  margin-bottom: 0;
+}
+@media (max-width: 767px) {
+  #certification-section .block-20 {
+    height: 160px;
+  }
+}
+
+/* Certification images styled like project images, but always fully visible */
+#certification-section .block-20.cert-img {
+  height: 250px;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  width: 100%;
+  margin-bottom: 0;
+  border: 1px solid #eee;
+}
+@media (max-width: 991px) {
+  #certification-section .block-20.cert-img {
+    height: 180px;
+  }
+}
+@media (max-width: 767px) {
+  #certification-section .block-20.cert-img {
+    height: 120px;
+  }
+}
 
 </style>
 
@@ -127,6 +179,7 @@
 	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
 			  <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
 	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Education</span></a></li>
+	          <li class="nav-item"><a href="#certification-section" class="nav-link"><span>Certifications</span></a></li> <!-- Added Certifications link -->
 	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
 	        </ul>
 	      </div>
@@ -217,7 +270,7 @@
 									<div class="col-sm-6 col-md-7">
 									  <div class="about-info">
 										<p><span class="title-s">Name: </span> <span>Yeasin Arafat</span></p>
-										<p><span class="title-s">Ex Job: </span> <span>Business Analyst</span></p>
+										<p><span class="title-s">Ex Job: </span> <span>Sales Representative</span></p>
 										<p><span class="title-s">Experience: </span> <span>5 Years 10 Months</span></p>
 										<p><span class="title-s">Address: </span> <span>Uttara Model Town, Dhaka, Bangladesh</span></p>
 									  </div>
@@ -394,7 +447,7 @@
 				<div class="col-md-6">
 					<div class="resume-wrap ftco-animate">
 						<span class="date">2018-2024</span>
-						<h2>Business Analyst</h2>
+						<h2>Sales Representative</h2>
 						<span class="position">Konika Studio</span>
 						
 							<ul>
@@ -402,7 +455,7 @@
 								<li>Collaborated with cross-functional teams to optimize inventory strategies, improving product availability and reducing operational inefficiencies by 27%.</li>
 								<li>Streamlined reporting processes through automation and integration of analytical tools, achieving a 27% reduction in operational inefficiencies.</li>
 							</ul>
-						</p>
+						
 					</div>
 
 				</div>
@@ -418,8 +471,81 @@
     		</div>
     	</div>
     </section>
+    <!-- End of Experience section -->
 
-   
+    <!-- Certification Section Start -->
+    <section class="ftco-section" id="certification-section">
+      <div class="container">
+        <div class="row">
+          <h2 class="big-4">Certifications</h2>
+          <div class="underline"></div>
+        </div>
+        <br>
+        <div class="row d-flex">
+          <!-- Certificate 1: CS50X -->
+          <div class="col-md-3 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="https://certificates.cs50.io/your-cs50x-certificate-link" target="_blank" class="block-20 zoom-effect cert-img" style="background-image: url('images/cert_cs50x.png');">
+              </a>
+              <div class="text mt-3 float-right d-block text-center">
+                <h3 class="heading mb-2"><a href="https://certificates.cs50.io/your-cs50x-certificate-link" target="_blank">CS50X - Introduction to Computer Science</a></h3>
+                <p>Harvard Online University</p>
+                <a href="https://certificates.cs50.io/your-cs50x-certificate-link" target="_blank" class="btn btn-primary btn-sm">View Certificate</a>
+              </div>
+            </div>
+          </div>
+          <!-- Certificate 2: CS50P Python -->
+          <div class="col-md-3 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="https://github.com/yeasinnn11/CS50-Programming-with-python" target="_blank" class="block-20 zoom-effect cert-img" style="background-image: url('images/CS50P.png');">
+              </a>
+              <div class="text mt-3 float-right d-block text-center">
+                <h3 class="heading mb-2"><a href="https://github.com/yeasinnn11/CS50-Programming-with-python" target="_blank">CS50P - Introduction to Programming with Python</a></h3>
+                <p>Harvard Online University</p>
+                <a href="https://github.com/yeasinnn11/CS50-Programming-with-python" target="_blank" class="btn btn-primary btn-sm">View Certificate</a>
+              </div>
+            </div>
+          </div>
+          <!-- Certificate 2: CS50SQL SQL -->
+          <div class="col-md-3 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="https://github.com/yeasinnn11/CS50-s-Introduction-to-Databases-with-SQL" target="_blank" class="block-20 zoom-effect cert-img" style="background-image: url('images/CS50_SQL.png');">
+              </a>
+              <div class="text mt-3 float-right d-block text-center">
+                <h3 class="heading mb-2"><a href="https://github.com/yeasinnn11/CS50-s-Introduction-to-Databases-with-SQL" target="_blank">CS50P - Introduction to Programming with SQL</a></h3>
+                <p>Harvard Online University</p>
+                <a href="https://github.com/yeasinnn11/CS50-s-Introduction-to-Databases-with-SQL" target="_blank" class="btn btn-primary btn-sm">View Certificate</a>
+              </div>
+            </div>
+          </div>
+          <!-- Certificate 3: 365 DataScience SQL -->
+          <div class="col-md-3 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="https://learn.365datascience.com/c/a1e10a83a7/" target="_blank" class="block-20 zoom-effect cert-img" style="background-image: url('images/cert_sql.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block text-center">
+                <h3 class="heading mb-2"><a href="https://learn.365datascience.com/c/a1e10a83a7/" target="_blank">Advanced SQL</a></h3>
+                <p>365 DataScience</p>
+                <a href="https://learn.365datascience.com/c/a1e10a83a7/" target="_blank" class="btn btn-primary btn-sm">View Certificate</a>
+              </div>
+            </div>
+          </div>
+          <!-- Certificate 4: 365 DataScience Statistics -->
+          <div class="col-md-3 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="https://learn.365datascience.com/c/d15b699d25/" target="_blank" class="block-20 zoom-effect cert-img" style="background-image: url('images/stats.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block text-center">
+                <h3 class="heading mb-2"><a href="https://learn.365datascience.com/c/d15b699d25/" target="_blank">Statistics</a></h3>
+                <p>365 DataScience</p>
+                <a href="https://learn.365datascience.com/c/d15b699d25/" target="_blank" class="btn btn-primary btn-sm">View Certificate</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Certification Section End -->
 
     <section class="ftco-section" id="project-section">
       <div class="container">
